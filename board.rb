@@ -1,6 +1,9 @@
 require_relative "tile"
 
 class Board
+    attr_reader :height, :width
+    attr_accessor :mines
+    
     def initialize(height, width, mines)
         @height = height
         @width = width
@@ -9,7 +12,11 @@ class Board
 
     def populate
         Array.new(@height) {Array.new(@width) {
-            Tile.new
+            Tile.new([0,0], false)
             }}
+    end
+
+    def plant_mines
+
     end
 end

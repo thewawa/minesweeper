@@ -1,6 +1,9 @@
 require_relative "board"
 
 class Tile
+    attr_reader :position
+    attr_accessor :mined, :content
+
     def initialize(position, mined)
         @position = position
         @mined = mined
