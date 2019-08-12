@@ -29,7 +29,6 @@ class Board
             random_tile = @tiles.flatten[coordinate]
 
             random_tile.mined = true
-            random_tile.content = "*"
         end
     end
 
@@ -55,4 +54,10 @@ class Board
             puts
         end
     end
+
+    # def hit_mine?(tile)
+    #     @tiles.each do |tile|
+    #         tile.content = "*" if tile.mined == true
+    #     end
+    # end
 end
