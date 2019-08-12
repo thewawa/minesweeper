@@ -6,3 +6,5 @@ def create_board
 end
 
 # create_board
+# tile = Tile.new([0,1], false)
+# board = Board.new(9,9,10).populate

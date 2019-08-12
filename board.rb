@@ -12,6 +12,7 @@ class Board
 
     def populate
         board = Array.new(@height) {Array.new(@width) {0}}
+        # Array.new(9) {Array.new(9) {0}}
         
         board.each.with_index do |row, idx1|
             row.each.with_index do |tile, idx2|
