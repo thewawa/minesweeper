@@ -11,7 +11,11 @@ end
 
 board = Board.new(9,9,10)
 board.populate
+
 board.plant_mines
-tile = board.tiles.flatten[29]
-tile.list_neighbors(board.tiles)
-tile.neighbor_bomb_count(tile.neighbors)
+tiles = board.tiles
+
+tile = tiles.flatten[24]
+tile.reveal(tiles)
+# tile.neighbors
+# tile.neighbor_bombs

@@ -25,9 +25,11 @@ class Board
 
     def plant_mines
         while @tiles.flatten.count { |tile| tile.mined == true } < @mines
-            random_tile = rand(0...81)
+            coordinate = rand(0...81)
+            random_tile = @tiles.flatten[coordinate]
 
-            @tiles.flatten[random_tile].mined = true
+            random_tile.mined = true
+            random_tile.content = "*"
         end
     end
 end

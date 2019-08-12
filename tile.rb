@@ -2,7 +2,7 @@ require_relative "board"
 
 class Tile
     attr_reader :position
-    attr_accessor :mined, :content, :neighbors, :neighbor_bomb_count, :revealed
+    attr_accessor :mined, :content, :neighbors, :neighbor_bombs, :revealed
 
     def initialize(position)
         @position = position
@@ -13,10 +13,11 @@ class Tile
 
     def inspect
         { 'position' => @position, 
-        'mined' => @mined, }.inspect
+        'mined' => @mined, 
+        'content' => @content }.inspect
     end
 
-    def list_neighbors(board)
+    def list_neighbors(board_tiles)
         @neighbors = []
         row = @position[0]
         column = @position[1]
@@ -24,35 +25,35 @@ class Tile
         #row above
         if row > 0
             if column > 0
-                @neighbors << board[row-1][column-1]
+                @neighbors << board_tiles[row-1][column-1]
             end
 
-            @neighbors << board[row-1][column]
+            @neighbors << board_tiles[row-1][column]
 
             if column < 8
-                @neighbors << board[row-1][column+1]
+                @neighbors << board_tiles[row-1][column+1]
             end
         end
 
         #same row
         if column > 0
-            @neighbors << board[row][column-1]
+            @neighbors << board_tiles[row][column-1]
         end
 
         if column < 8
-            @neighbors << board[row][column+1]
+            @neighbors << board_tiles[row][column+1]
         end
 
         #row below
         if row < 8
             if column > 0
-                @neighbors << board[row+1][column-1]
+                @neighbors << board_tiles[row+1][column-1]
             end
 
-            @neighbors << board[row+1][column]
+            @neighbors << board_tiles[row+1][column]
 
             if column < 8
-                @neighbors << board[row+1][column+1]
+                @neighbors << board_tiles[row+1][column+1]
             end
         end
 
@@ -60,14 +61,21 @@ class Tile
     end
 
     def neighbor_bomb_count(array)
-        @neighbor_bomb_count = 0
-        @neighbor_bomb_count += array.count { |tile| tile.mined == true}
+        @neighbor_bombs = 0
+        @neighbor_bombs += array.count { |tile| tile.mined == true}
 
-        @neighbor_bomb_count
+        @neighbor_bombs
     end
 
-    def reveal
-        # if @neighbor_bomb_count == 0
+    def reveal(board_tiles)
+        self.list_neighbors(board_tiles)
+        self.neighbor_bomb_count(@neighbors)
+
+        if @neighbor_bombs > 0
+            @content = @neighbor_bombs
+        end
+
+        @revealed = true
     end
 
     def revealed?
