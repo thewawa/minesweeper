@@ -11,7 +11,7 @@ class Tile
     end
 
     def inspect
-        
+        { 'position' => @position, 'mined' => @mined, 'content' => @content }.inspect
     end
 
     def neighbors
