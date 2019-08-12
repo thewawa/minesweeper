@@ -18,7 +18,7 @@ class Tile
         'neighbor_bomb_count' => @neighbor_bomb_count }.inspect
     end
 
-    def neighbors(board)
+    def list_neighbors(board)
         @neighbors = []
         row = @position[0]
         column = @position[1]
@@ -61,23 +61,22 @@ class Tile
         @neighbors
     end
 
-    def neighbor_bomb_count(board)
-        @neighbor_bomb_count = "?"
+    def neighbor_bomb_count(array)
+        @neighbor_bomb_count = 0
+        @neighbor_bomb_count += array.count { |tile| tile.mined == true}
+
+        @neighbor_bomb_count
     end
 
     def reveal
         
     end
 
-    def bombed?
-
-    end
-
-    def flagged?
-
-    end
-
     def revealed?
+
+    end
+    
+    def flagged?
 
     end
 end
