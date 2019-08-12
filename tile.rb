@@ -6,7 +6,7 @@ class Tile
 
     def initialize(position)
         @position = position
-        @content = "_"
+        @content = " "
         @mined = false
         @revealed = false
     end
@@ -71,15 +71,15 @@ class Tile
         self.list_neighbors(board_tiles)
         self.neighbor_bomb_count(@neighbors)
 
+        return if @revealed == true
+
         if @neighbor_bombs > 0
             @content = @neighbor_bombs
+        else
+            @content = "_"
         end
 
         @revealed = true
-    end
-
-    def revealed?
-        
     end
     
     def flagged?

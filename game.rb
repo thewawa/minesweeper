@@ -7,15 +7,18 @@ end
 
 # create_board
 # Array.new(9) {Array.new(9) {0}}
-# tile = Tile.new([0,1], false)
+# tile = Tile.new([0,1])
 
 board = Board.new(9,9,10)
 board.populate
 
 board.plant_mines
-tiles = board.tiles
+# tiles = board.tiles
 
-tile = tiles.flatten[24]
-tile.reveal(tiles)
+# tile = tiles.flatten[24]
+# tile.reveal(tiles)
+
 # tile.neighbors
 # tile.neighbor_bombs
+
+board.render

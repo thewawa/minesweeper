@@ -32,4 +32,27 @@ class Board
             random_tile.content = "*"
         end
     end
+
+    def reveal(tile)
+        # tile.reveal(@tiles)
+
+        # tile.neighbors.each do |neighbor|
+        #     reveal(neighbor) if neighbor.mined == false
+        # end
+    end
+
+    def render
+        print " "
+        (0...@width).each {|column| print " #{column}"}
+        puts
+
+        @tiles.each.with_index do |row, idx1|
+            print "#{idx1}"
+            row.each.with_index do |tile, idx2|
+                print " #{tile.content}"
+            end
+
+            puts
+        end
+    end
 end
