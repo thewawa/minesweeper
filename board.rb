@@ -16,7 +16,7 @@ class Board
         
         @tiles.each.with_index do |row, idx1|
             row.each.with_index do |tile, idx2|
-                row[idx2] = Tile.new([idx1,idx2], false)
+                row[idx2] = Tile.new([idx1,idx2])
             end
         end
 

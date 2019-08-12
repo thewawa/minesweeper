@@ -2,20 +2,18 @@ require_relative "board"
 
 class Tile
     attr_reader :position
-    attr_accessor :mined, :content, :neighbors, :neighbor_bomb_count
+    attr_accessor :mined, :content, :neighbors, :neighbor_bomb_count, :revealed
 
-    def initialize(position, mined)
+    def initialize(position)
         @position = position
-        @mined = mined
         @content = "_"
+        @mined = false
+        @revealed = false
     end
 
     def inspect
         { 'position' => @position, 
-        'mined' => @mined, 
-        'content' => @content,
-        'neighbors' => @neighbors,
-        'neighbor_bomb_count' => @neighbor_bomb_count }.inspect
+        'mined' => @mined, }.inspect
     end
 
     def list_neighbors(board)
@@ -69,11 +67,11 @@ class Tile
     end
 
     def reveal
-        
+        # if @neighbor_bomb_count == 0
     end
 
     def revealed?
-
+        
     end
     
     def flagged?
