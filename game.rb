@@ -1,9 +1,7 @@
 require_relative "tile"
 require_relative "board"
 
-def create_board
-    Board.new(9,9,10).populate
-end
+board = Board.new(9,9,10)
 
 # create_board
 # Array.new(9) {Array.new(9) {0}}
@@ -13,12 +11,13 @@ board = Board.new(9,9,10)
 board.populate
 
 board.plant_mines
-# tiles = board.tiles
 
-# tile = tiles.flatten[24]
+tiles = board.tiles
+
 # tile.reveal(tiles)
 
 # tile.neighbors
 # tile.neighbor_bombs
 
-board.render
+board.reveal(tiles[0][0])
+# board.render

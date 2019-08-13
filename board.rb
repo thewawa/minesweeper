@@ -33,11 +33,17 @@ class Board
     end
 
     def reveal(tile)
-        # tile.reveal(@tiles)
+        tile.reveal(@tiles)
 
-        # tile.neighbors.each do |neighbor|
-        #     reveal(neighbor) if neighbor.mined == false
-        # end
+        mine_hit(tile) if tile.mined == true
+
+        tile.neighbors.each do |neighbor|
+            neighbor.list_neighbors(@tiles)
+
+            if neighbor.mined == false && neighbor.revealed == false && neighbor.neighbors.any? { |ele| ele.content == "_" }
+                reveal(neighbor)
+            end
+        end
     end
 
     def render
@@ -55,9 +61,15 @@ class Board
         end
     end
 
-    # def hit_mine?(tile)
-    #     @tiles.each do |tile|
-    #         tile.content = "*" if tile.mined == true
-    #     end
-    # end
+    def mine_hit(tile)
+        @tiles.flatten.each do |ele|
+            ele.content = "*" if ele.mined == true
+        end
+
+        game_over
+    end
+
+    def game_over
+        puts "You lost!"
+    end
 end

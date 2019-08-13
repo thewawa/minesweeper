@@ -71,6 +71,7 @@ class Tile
         self.list_neighbors(board_tiles)
         self.neighbor_bomb_count(@neighbors)
 
+        return if @mined == true
         return if @revealed == true
 
         if @neighbor_bombs > 0
