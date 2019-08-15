@@ -1,23 +1,51 @@
 require_relative "tile"
 require_relative "board"
 
-board = Board.new(9,9,10)
+def setup(board)    
+    board.populate
 
-# create_board
-# Array.new(9) {Array.new(9) {0}}
-# tile = Tile.new([0,1])
+    board.plant_mines    
+end
 
-board = Board.new(9,9,10)
-board.populate
+def get_guess
 
-board.plant_mines
+end
 
-tiles = board.tiles
+def play_round(board)
+    board.render
 
-# tile.reveal(tiles)
+    # get_guess(board)
 
-# tile.neighbors
-# tile.neighbor_bombs
+    board[0,0].reveal
+end
 
-board.reveal(tiles[0][0])
-# board.render
+def game_over?(board)
+    # return false if get_guess == false
+
+    true
+end
+
+def won?(board)
+    # return false if (...)
+
+    true
+end
+
+def play(board)
+    play_round(board) until game_over?
+
+    if won?
+        puts "You won!" 
+    else
+        puts "You lost!"
+    end
+end
+
+new_game = Board.new(9,9,10)
+setup(new_game)
+# tiles = new_game.tiles
+
+# play_round(new_game)
+
+# new_game.render
+# new_game.reveal(new_game[0,0])

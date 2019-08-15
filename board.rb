@@ -32,10 +32,12 @@ class Board
         end
     end
 
+    def [](row, column)
+        @tiles[row][column]
+    end
+
     def reveal(tile)
         tile.reveal(@tiles)
-
-        mine_hit(tile) if tile.mined == true
 
         tile.neighbors.each do |neighbor|
             neighbor.list_neighbors(@tiles)
@@ -43,7 +45,15 @@ class Board
             if neighbor.mined == false && neighbor.revealed == false && neighbor.neighbors.any? { |ele| ele.content == "_" }
                 reveal(neighbor)
             end
+        end        
+
+        if tile.mined == true
+            mine_hit(tile) 
+
+            return false
         end
+
+        true
     end
 
     def render
@@ -65,11 +75,10 @@ class Board
         @tiles.flatten.each do |ele|
             ele.content = "*" if ele.mined == true
         end
-
-        game_over
+        # game_over
     end
 
-    def game_over
-        puts "You lost!"
-    end
+    # def game_over
+    #     puts "You lost!"
+    # end
 end
