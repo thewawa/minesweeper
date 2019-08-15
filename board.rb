@@ -57,6 +57,8 @@ class Board
     end
 
     def render
+        system("cls")
+        
         print " "
         (0...@width).each {|column| print " #{column}"}
         puts

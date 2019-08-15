@@ -1,51 +1,76 @@
 require_relative "tile"
 require_relative "board"
 
-def setup(board)    
-    board.populate
+class Game
+    attr_accessor :board
 
-    board.plant_mines    
-end
+    def initialize
+        @board = Board.new(9,9,10)
+    end
 
-def get_guess
+    def setup(board)    
+        board.populate
 
-end
+        board.plant_mines    
+    end
 
-def play_round(board)
-    board.render
+    def get_guess
+        puts "Reveal tile (e.g. '3,5' where 3 is the row and 5 is the column):"
 
-    # get_guess(board)
+        gets.chomp.split(",")
+    end
 
-    board[0,0].reveal
-end
+    def apply_guess(board)
+        position = get_guess.map { |num| num.to_i }
+        row = position[0]
+        col = position[1]   
 
-def game_over?(board)
-    # return false if get_guess == false
+        tile = board[row, col]
 
-    true
-end
+        board.reveal(tile)
+    end
 
-def won?(board)
-    # return false if (...)
+    def play_round(board)
+        status = apply_guess(board)
 
-    true
-end
+        if bomb?(status) == true
+            puts "You lost!"
+            exit 
+        end
 
-def play(board)
-    play_round(board) until game_over?
+        board.render
+    end
 
-    if won?
-        puts "You won!" 
-    else
-        puts "You lost!"
+    def bomb?(status)
+        return true if status == false
+
+        false
+    end
+
+    def won?(board)
+        tiles = board.tiles        
+
+        if (tiles.flatten.length - tiles.flatten.count {|tile| !tile.mined && tile.revealed}) == board.mines
+            puts "You won!"
+            return true 
+        end
+
+        false
+    end
+
+    # def game_over?(board)
+    #     return true if bomb? || won?(board)
+
+    #     false
+    # end
+
+    def play(board)
+        setup(board)
+        board.render
+
+        play_round(board) until won?(board)
     end
 end
 
-new_game = Board.new(9,9,10)
-setup(new_game)
-# tiles = new_game.tiles
-
-# play_round(new_game)
-
-# new_game.render
-# new_game.reveal(new_game[0,0])
+new_game = Game.new
+new_game.play(new_game.board)
