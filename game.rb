@@ -15,30 +15,45 @@ class Game
     end
 
     def get_guess
-        puts "Reveal tile (e.g. '3,5' where 3 is the row and 5 is the column):"
+        puts "Start your guess with 'r' to reveal a tile (e.g. 'r3,5') or 'f' to flag/unflag it (e.g. 'f8,0'):"
 
-        gets.chomp.split(",")
+        gets.chomp
     end
 
-    def apply_guess(board)
-        position = get_guess.map { |num| num.to_i }
+    def process_guess(board)
+        input = get_guess
+        coordinates = input[1..-1].split(",")
+        
+        position = coordinates.map { |num| num.to_i }
         row = position[0]
-        col = position[1]   
-
+        col = position[1]
         tile = board[row, col]
 
+        if input[0] == "r"
+            return if tile.content == "F"
+            apply_reveal(board, tile)
+        elsif input[0] == "f" && tile.flagged == false
+            board.flag_tile(tile)
+            return true
+        elsif input[0] == "f" && tile.flagged == true
+            board.unflag_tile(tile)
+            return true
+        end
+    end
+
+    def apply_reveal(board, tile)
         board.reveal(tile)
     end
 
     def play_round(board)
-        status = apply_guess(board)
+        status = process_guess(board)
+
+        board.render
 
         if bomb?(status) == true
             puts "You lost!"
             exit 
         end
-
-        board.render
     end
 
     def bomb?(status)
@@ -57,12 +72,6 @@ class Game
 
         false
     end
-
-    # def game_over?(board)
-    #     return true if bomb? || won?(board)
-
-    #     false
-    # end
 
     def play(board)
         setup(board)

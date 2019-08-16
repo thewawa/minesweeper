@@ -2,13 +2,14 @@ require_relative "board"
 
 class Tile
     attr_reader :position
-    attr_accessor :mined, :content, :neighbors, :neighbor_bombs, :revealed
+    attr_accessor :content, :mined, :revealed, :flagged, :neighbors, :neighbor_bombs
 
     def initialize(position)
         @position = position
         @content = " "
         @mined = false
         @revealed = false
+        @flagged = false
     end
 
     def inspect
@@ -81,9 +82,5 @@ class Tile
         end
 
         @revealed = true
-    end
-    
-    def flagged?
-
     end
 end

@@ -56,6 +56,22 @@ class Board
         true
     end
 
+    def flag_tile(tile)
+        tile.content = "F"
+        tile.flagged = true
+    end
+
+    def unflag_tile(tile)
+        tile.content = " "
+        tile.flagged = false
+    end
+
+    def mine_hit(tile)
+        @tiles.flatten.each do |ele|
+            ele.content = "*" if ele.mined == true
+        end
+    end
+
     def render
         system("cls")
         
@@ -72,15 +88,4 @@ class Board
             puts
         end
     end
-
-    def mine_hit(tile)
-        @tiles.flatten.each do |ele|
-            ele.content = "*" if ele.mined == true
-        end
-        # game_over
-    end
-
-    # def game_over
-    #     puts "You lost!"
-    # end
 end
