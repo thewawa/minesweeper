@@ -76,7 +76,7 @@ class Tile
         return if @revealed == true
 
         if @neighbor_bombs > 0
-            @content = @neighbor_bombs
+            @content = "#{@neighbor_bombs}"
         else
             @content = "_"
         end
