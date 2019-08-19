@@ -28,6 +28,10 @@ class Game
     end
 
     def which_tile?(input)
+        if input.length != 4
+            return
+        end
+        
         coordinates = input[1..-1].split(",")
         
         position = coordinates.map { |num| num.to_i }
