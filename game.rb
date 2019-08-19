@@ -144,7 +144,7 @@ class Game
         
         saved_game = YAML::load(file)
         
-        @board.render
+        saved_game.board.render
         saved_game.play
     end
 end
