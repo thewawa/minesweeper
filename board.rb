@@ -57,13 +57,17 @@ class Board
     end
 
     def flag_tile(tile)
-        tile.content = "F"
-        tile.flagged = true
+        if tile.content == " "
+            tile.content = "F"
+            tile.flagged = true
+        end
     end
 
     def unflag_tile(tile)
-        tile.content = " "
-        tile.flagged = false
+        if tile.content == "F"
+            tile.content = " " 
+            tile.flagged = false
+        end
     end
 
     def mine_hit(tile)
