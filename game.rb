@@ -33,7 +33,7 @@ class Game
         max_input_length = 2 + max_height.to_s.length + max_width.to_s.length
 
         #filter out inputs that are typos (e.g. 'r,0') or unreal (e.g. 'f999,999')
-        if input.length < 4 || input.length > max_input_length
+        if input[1] == "," || input[-1] == "," || input.length < 4 || input.length > max_input_length
             return
         end
         
