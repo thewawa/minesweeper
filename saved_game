@@ -804,321 +804,65 @@ board: !ruby/object:Board
       mined: true
       revealed: false
       flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 4
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 5
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 6
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 7
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 8
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 9
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 10
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 11
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 12
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 13
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 14
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 6
-      - 15
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-  - - !ruby/object:Tile
-      position:
-      - 7
-      - 0
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 1
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 2
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 3
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 4
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 5
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 6
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 7
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 8
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 9
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 10
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 11
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 12
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 13
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 14
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 7
-      - 15
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-  - - !ruby/object:Tile
-      position:
-      - 8
-      - 0
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 8
-      - 1
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 8
-      - 2
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 8
-      - 3
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 8
-      - 4
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 8
-      - 5
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 8
-      - 6
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 8
-      - 7
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
     - &1 !ruby/object:Tile
       position:
-      - 8
-      - 8
+      - 6
+      - 4
       content: " "
       mined: false
       revealed: false
       flagged: false
     - &2 !ruby/object:Tile
       position:
+      - 6
+      - 5
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - &3 !ruby/object:Tile
+      position:
+      - 6
+      - 6
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - &5 !ruby/object:Tile
+      position:
+      - 6
+      - 7
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - &7 !ruby/object:Tile
+      position:
+      - 6
       - 8
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - &9 !ruby/object:Tile
+      position:
+      - 6
       - 9
       content: " "
       mined: false
       revealed: false
       flagged: false
-    - &4 !ruby/object:Tile
+    - &11 !ruby/object:Tile
       position:
-      - 8
+      - 6
       - 10
       content: " "
-      mined: true
+      mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
+    - &13 !ruby/object:Tile
       position:
-      - 8
+      - 6
       - 11
       content: " "
       mined: false
@@ -1126,7 +870,7 @@ board: !ruby/object:Board
       flagged: false
     - !ruby/object:Tile
       position:
-      - 8
+      - 6
       - 12
       content: " "
       mined: false
@@ -1134,23 +878,23 @@ board: !ruby/object:Board
       flagged: false
     - !ruby/object:Tile
       position:
-      - 8
+      - 6
       - 13
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 8
-      - 14
       content: " "
       mined: false
       revealed: false
       flagged: false
     - !ruby/object:Tile
       position:
-      - 8
+      - 6
+      - 14
+      content: " "
+      mined: true
+      revealed: false
+      flagged: false
+    - !ruby/object:Tile
+      position:
+      - 6
       - 15
       content: " "
       mined: false
@@ -1158,7 +902,7 @@ board: !ruby/object:Board
       flagged: false
   - - !ruby/object:Tile
       position:
-      - 9
+      - 7
       - 0
       content: " "
       mined: false
@@ -1166,7 +910,7 @@ board: !ruby/object:Board
       flagged: false
     - !ruby/object:Tile
       position:
-      - 9
+      - 7
       - 1
       content: " "
       mined: false
@@ -1174,7 +918,7 @@ board: !ruby/object:Board
       flagged: false
     - !ruby/object:Tile
       position:
-      - 9
+      - 7
       - 2
       content: " "
       mined: false
@@ -1182,56 +926,24 @@ board: !ruby/object:Board
       flagged: false
     - !ruby/object:Tile
       position:
-      - 9
+      - 7
       - 3
       content: " "
       mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
+    - &4 !ruby/object:Tile
       position:
-      - 9
+      - 7
       - 4
       content: " "
       mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
+    - &6 !ruby/object:Tile
       position:
-      - 9
-      - 5
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 9
-      - 6
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 9
       - 7
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - &3 !ruby/object:Tile
-      position:
-      - 9
-      - 8
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - &5 !ruby/object:Tile
-      position:
-      - 9
-      - 9
+      - 5
       content: " "
       mined: false
       revealed: false
@@ -1240,50 +952,1427 @@ board: !ruby/object:Board
       - *1
       - *2
       - *3
-    - &7 !ruby/object:Tile
-      position:
-      - 9
-      - 10
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-      neighbors:
-      - *2
       - *4
-      - *5
+      - &8 !ruby/object:Tile
+        position:
+        - 7
+        - 6
+        content: " "
+        mined: false
+        revealed: false
+        flagged: false
+        neighbors:
+        - *2
+        - *3
+        - *5
+        - *6
+        - &10 !ruby/object:Tile
+          position:
+          - 7
+          - 7
+          content: " "
+          mined: true
+          revealed: false
+          flagged: false
+          neighbors:
+          - *3
+          - *5
+          - *7
+          - *8
+          - &12 !ruby/object:Tile
+            position:
+            - 7
+            - 8
+            content: " "
+            mined: false
+            revealed: false
+            flagged: false
+            neighbors:
+            - *5
+            - *7
+            - *9
+            - *10
+            - &14 !ruby/object:Tile
+              position:
+              - 7
+              - 9
+              content: " "
+              mined: false
+              revealed: false
+              flagged: false
+              neighbors:
+              - *7
+              - *9
+              - *11
+              - *12
+              - &15 !ruby/object:Tile
+                position:
+                - 7
+                - 10
+                content: " "
+                mined: false
+                revealed: false
+                flagged: false
+                neighbors:
+                - *9
+                - *11
+                - *13
+                - *14
+                - &26 !ruby/object:Tile
+                  position:
+                  - 7
+                  - 11
+                  content: " "
+                  mined: true
+                  revealed: false
+                  flagged: false
+                - &24 !ruby/object:Tile
+                  position:
+                  - 8
+                  - 9
+                  content: '1'
+                  mined: false
+                  revealed: true
+                  flagged: false
+                  neighbors:
+                  - *12
+                  - *14
+                  - *15
+                  - &22 !ruby/object:Tile
+                    position:
+                    - 8
+                    - 8
+                    content: '1'
+                    mined: false
+                    revealed: true
+                    flagged: false
+                    neighbors:
+                    - *10
+                    - *12
+                    - *14
+                    - &20 !ruby/object:Tile
+                      position:
+                      - 8
+                      - 7
+                      content: '1'
+                      mined: false
+                      revealed: true
+                      flagged: false
+                      neighbors:
+                      - *8
+                      - *10
+                      - *12
+                      - &16 !ruby/object:Tile
+                        position:
+                        - 8
+                        - 6
+                        content: '2'
+                        mined: false
+                        revealed: true
+                        flagged: false
+                        neighbors:
+                        - *6
+                        - *8
+                        - *10
+                        - &18 !ruby/object:Tile
+                          position:
+                          - 8
+                          - 5
+                          content: " "
+                          mined: false
+                          revealed: false
+                          flagged: false
+                          neighbors:
+                          - *4
+                          - *6
+                          - *8
+                          - &17 !ruby/object:Tile
+                            position:
+                            - 8
+                            - 4
+                            content: " "
+                            mined: false
+                            revealed: false
+                            flagged: false
+                          - *16
+                          - &19 !ruby/object:Tile
+                            position:
+                            - 9
+                            - 4
+                            content: " "
+                            mined: false
+                            revealed: false
+                            flagged: false
+                          - &21 !ruby/object:Tile
+                            position:
+                            - 9
+                            - 5
+                            content: " "
+                            mined: true
+                            revealed: false
+                            flagged: false
+                            neighbors:
+                            - *17
+                            - *18
+                            - *16
+                            - *19
+                            - &23 !ruby/object:Tile
+                              position:
+                              - 9
+                              - 6
+                              content: '1'
+                              mined: false
+                              revealed: true
+                              flagged: false
+                              neighbors:
+                              - *18
+                              - *16
+                              - *20
+                              - *21
+                              - &25 !ruby/object:Tile
+                                position:
+                                - 9
+                                - 7
+                                content: _
+                                mined: false
+                                revealed: true
+                                flagged: false
+                                neighbors:
+                                - *16
+                                - *20
+                                - *22
+                                - *23
+                                - &33 !ruby/object:Tile
+                                  position:
+                                  - 9
+                                  - 8
+                                  content: _
+                                  mined: false
+                                  revealed: true
+                                  flagged: false
+                                  neighbors:
+                                  - *20
+                                  - *22
+                                  - *24
+                                  - *25
+                                  - &31 !ruby/object:Tile
+                                    position:
+                                    - 9
+                                    - 9
+                                    content: '1'
+                                    mined: false
+                                    revealed: true
+                                    flagged: false
+                                    neighbors:
+                                    - *22
+                                    - *24
+                                    - &27 !ruby/object:Tile
+                                      position:
+                                      - 8
+                                      - 10
+                                      content: " "
+                                      mined: true
+                                      revealed: false
+                                      flagged: false
+                                      neighbors:
+                                      - *14
+                                      - *15
+                                      - *26
+                                      - *24
+                                      - &29 !ruby/object:Tile
+                                        position:
+                                        - 8
+                                        - 11
+                                        content: " "
+                                        mined: false
+                                        revealed: false
+                                        flagged: false
+                                        neighbors:
+                                        - *15
+                                        - *26
+                                        - &28 !ruby/object:Tile
+                                          position:
+                                          - 7
+                                          - 12
+                                          content: " "
+                                          mined: false
+                                          revealed: false
+                                          flagged: false
+                                        - *27
+                                        - &30 !ruby/object:Tile
+                                          position:
+                                          - 8
+                                          - 12
+                                          content: " "
+                                          mined: false
+                                          revealed: false
+                                          flagged: false
+                                          neighbors:
+                                          - *26
+                                          - *28
+                                          - &99 !ruby/object:Tile
+                                            position:
+                                            - 7
+                                            - 13
+                                            content: " "
+                                            mined: false
+                                            revealed: false
+                                            flagged: false
+                                          - *29
+                                          - &45 !ruby/object:Tile
+                                            position:
+                                            - 8
+                                            - 13
+                                            content: " "
+                                            mined: true
+                                            revealed: false
+                                            flagged: false
+                                          - &32 !ruby/object:Tile
+                                            position:
+                                            - 9
+                                            - 11
+                                            content: '2'
+                                            mined: false
+                                            revealed: true
+                                            flagged: false
+                                            neighbors:
+                                            - *27
+                                            - *29
+                                            - *30
+                                            - &34 !ruby/object:Tile
+                                              position:
+                                              - 9
+                                              - 10
+                                              content: '1'
+                                              mined: false
+                                              revealed: true
+                                              flagged: false
+                                              neighbors:
+                                              - *24
+                                              - *27
+                                              - *29
+                                              - *31
+                                              - *32
+                                              - &43 !ruby/object:Tile
+                                                position:
+                                                - 10
+                                                - 9
+                                                content: _
+                                                mined: false
+                                                revealed: true
+                                                flagged: false
+                                                neighbors:
+                                                - *33
+                                                - *31
+                                                - *34
+                                                - &41 !ruby/object:Tile
+                                                  position:
+                                                  - 10
+                                                  - 8
+                                                  content: '1'
+                                                  mined: false
+                                                  revealed: true
+                                                  flagged: false
+                                                  neighbors:
+                                                  - *25
+                                                  - *33
+                                                  - *31
+                                                  - &39 !ruby/object:Tile
+                                                    position:
+                                                    - 10
+                                                    - 7
+                                                    content: '1'
+                                                    mined: false
+                                                    revealed: true
+                                                    flagged: false
+                                                    neighbors:
+                                                    - *23
+                                                    - *25
+                                                    - *33
+                                                    - &35 !ruby/object:Tile
+                                                      position:
+                                                      - 10
+                                                      - 6
+                                                      content: '2'
+                                                      mined: false
+                                                      revealed: true
+                                                      flagged: false
+                                                      neighbors:
+                                                      - *21
+                                                      - *23
+                                                      - *25
+                                                      - &37 !ruby/object:Tile
+                                                        position:
+                                                        - 10
+                                                        - 5
+                                                        content: " "
+                                                        mined: false
+                                                        revealed: false
+                                                        flagged: false
+                                                        neighbors:
+                                                        - *19
+                                                        - *21
+                                                        - *23
+                                                        - &36 !ruby/object:Tile
+                                                          position:
+                                                          - 10
+                                                          - 4
+                                                          content: " "
+                                                          mined: false
+                                                          revealed: false
+                                                          flagged: false
+                                                        - *35
+                                                        - &38 !ruby/object:Tile
+                                                          position:
+                                                          - 11
+                                                          - 4
+                                                          content: " "
+                                                          mined: false
+                                                          revealed: false
+                                                          flagged: false
+                                                        - &40 !ruby/object:Tile
+                                                          position:
+                                                          - 11
+                                                          - 5
+                                                          content: " "
+                                                          mined: false
+                                                          revealed: false
+                                                          flagged: false
+                                                          neighbors:
+                                                          - *36
+                                                          - *37
+                                                          - *35
+                                                          - *38
+                                                          - &42 !ruby/object:Tile
+                                                            position:
+                                                            - 11
+                                                            - 6
+                                                            content: " "
+                                                            mined: false
+                                                            revealed: false
+                                                            flagged: false
+                                                            neighbors:
+                                                            - *37
+                                                            - *35
+                                                            - *39
+                                                            - *40
+                                                            - &44 !ruby/object:Tile
+                                                              position:
+                                                              - 11
+                                                              - 7
+                                                              content: " "
+                                                              mined: true
+                                                              revealed: false
+                                                              flagged: false
+                                                              neighbors:
+                                                              - *35
+                                                              - *39
+                                                              - *41
+                                                              - *42
+                                                              - &54 !ruby/object:Tile
+                                                                position:
+                                                                - 11
+                                                                - 8
+                                                                content: '1'
+                                                                mined: false
+                                                                revealed: true
+                                                                flagged: false
+                                                                neighbors:
+                                                                - *39
+                                                                - *41
+                                                                - *43
+                                                                - *44
+                                                                - &52 !ruby/object:Tile
+                                                                  position:
+                                                                  - 11
+                                                                  - 9
+                                                                  content: _
+                                                                  mined: false
+                                                                  revealed: true
+                                                                  flagged: false
+                                                                  neighbors:
+                                                                  - *41
+                                                                  - *43
+                                                                  - &51 !ruby/object:Tile
+                                                                    position:
+                                                                    - 10
+                                                                    - 10
+                                                                    content: _
+                                                                    mined: false
+                                                                    revealed: true
+                                                                    flagged: false
+                                                                    neighbors:
+                                                                    - *31
+                                                                    - *34
+                                                                    - *32
+                                                                    - *43
+                                                                    - &46 !ruby/object:Tile
+                                                                      position:
+                                                                      - 10
+                                                                      - 11
+                                                                      content: '1'
+                                                                      mined: false
+                                                                      revealed: true
+                                                                      flagged: false
+                                                                      neighbors:
+                                                                      - *34
+                                                                      - *32
+                                                                      - &47 !ruby/object:Tile
+                                                                        position:
+                                                                        - 9
+                                                                        - 12
+                                                                        content: " "
+                                                                        mined: false
+                                                                        revealed: false
+                                                                        flagged: false
+                                                                        neighbors:
+                                                                        - *29
+                                                                        - *30
+                                                                        - *45
+                                                                        - *32
+                                                                        - &48 !ruby/object:Tile
+                                                                          position:
+                                                                          - 9
+                                                                          - 13
+                                                                          content: " "
+                                                                          mined: true
+                                                                          revealed: false
+                                                                          flagged: false
+                                                                        - *46
+                                                                        - &49 !ruby/object:Tile
+                                                                          position:
+                                                                          - 10
+                                                                          - 12
+                                                                          content: " "
+                                                                          mined: true
+                                                                          revealed: false
+                                                                          flagged: false
+                                                                          neighbors:
+                                                                          - *32
+                                                                          - *47
+                                                                          - *48
+                                                                          - *46
+                                                                          - &50 !ruby/object:Tile
+                                                                            position:
+                                                                            - 10
+                                                                            - 13
+                                                                            content: " "
+                                                                            mined: false
+                                                                            revealed: false
+                                                                            flagged: false
+                                                                            neighbors:
+                                                                            - *47
+                                                                            - *48
+                                                                            - &100 !ruby/object:Tile
+                                                                              position:
+                                                                              - 9
+                                                                              - 14
+                                                                              content: " "
+                                                                              mined: false
+                                                                              revealed: false
+                                                                              flagged: false
+                                                                            - *49
+                                                                            - &64 !ruby/object:Tile
+                                                                              position:
+                                                                              - 10
+                                                                              - 14
+                                                                              content: " "
+                                                                              mined: false
+                                                                              revealed: false
+                                                                              flagged: false
+                                                                            - &62 !ruby/object:Tile
+                                                                              position:
+                                                                              - 11
+                                                                              - 12
+                                                                              content: '2'
+                                                                              mined: false
+                                                                              revealed: true
+                                                                              flagged: false
+                                                                              neighbors:
+                                                                              - *46
+                                                                              - *49
+                                                                              - *50
+                                                                              - &53 !ruby/object:Tile
+                                                                                position:
+                                                                                - 11
+                                                                                - 11
+                                                                                content: '1'
+                                                                                mined: false
+                                                                                revealed: true
+                                                                                flagged: false
+                                                                                neighbors:
+                                                                                - *51
+                                                                                - *46
+                                                                                - *49
+                                                                                - &55 !ruby/object:Tile
+                                                                                  position:
+                                                                                  - 11
+                                                                                  - 10
+                                                                                  content: _
+                                                                                  mined: false
+                                                                                  revealed: true
+                                                                                  flagged: false
+                                                                                  neighbors:
+                                                                                  - *43
+                                                                                  - *51
+                                                                                  - *46
+                                                                                  - *52
+                                                                                  - *53
+                                                                                  - &60 !ruby/object:Tile
+                                                                                    position:
+                                                                                    - 12
+                                                                                    - 9
+                                                                                    content: '2'
+                                                                                    mined: false
+                                                                                    revealed: true
+                                                                                    flagged: false
+                                                                                    neighbors:
+                                                                                    - *54
+                                                                                    - *52
+                                                                                    - *55
+                                                                                    - &56 !ruby/object:Tile
+                                                                                      position:
+                                                                                      - 12
+                                                                                      - 8
+                                                                                      content: '3'
+                                                                                      mined: false
+                                                                                      revealed: true
+                                                                                      flagged: false
+                                                                                      neighbors:
+                                                                                      - *44
+                                                                                      - *54
+                                                                                      - *52
+                                                                                      - &58 !ruby/object:Tile
+                                                                                        position:
+                                                                                        - 12
+                                                                                        - 7
+                                                                                        content: " "
+                                                                                        mined: false
+                                                                                        revealed: false
+                                                                                        flagged: false
+                                                                                        neighbors:
+                                                                                        - *42
+                                                                                        - *44
+                                                                                        - *54
+                                                                                        - &57 !ruby/object:Tile
+                                                                                          position:
+                                                                                          - 12
+                                                                                          - 6
+                                                                                          content: " "
+                                                                                          mined: false
+                                                                                          revealed: false
+                                                                                          flagged: false
+                                                                                        - *56
+                                                                                        - &59 !ruby/object:Tile
+                                                                                          position:
+                                                                                          - 13
+                                                                                          - 6
+                                                                                          content: " "
+                                                                                          mined: false
+                                                                                          revealed: false
+                                                                                          flagged: false
+                                                                                        - &61 !ruby/object:Tile
+                                                                                          position:
+                                                                                          - 13
+                                                                                          - 7
+                                                                                          content: " "
+                                                                                          mined: false
+                                                                                          revealed: false
+                                                                                          flagged: false
+                                                                                          neighbors:
+                                                                                          - *57
+                                                                                          - *58
+                                                                                          - *56
+                                                                                          - *59
+                                                                                          - &74 !ruby/object:Tile
+                                                                                            position:
+                                                                                            - 13
+                                                                                            - 8
+                                                                                            content: " "
+                                                                                            mined: true
+                                                                                            revealed: false
+                                                                                            flagged: false
+                                                                                            neighbors:
+                                                                                            - *58
+                                                                                            - *56
+                                                                                            - *60
+                                                                                            - *61
+                                                                                            - &72 !ruby/object:Tile
+                                                                                              position:
+                                                                                              - 13
+                                                                                              - 9
+                                                                                              content: " "
+                                                                                              mined: true
+                                                                                              revealed: false
+                                                                                              flagged: false
+                                                                                              neighbors:
+                                                                                              - *56
+                                                                                              - *60
+                                                                                              - &63 !ruby/object:Tile
+                                                                                                position:
+                                                                                                - 12
+                                                                                                - 10
+                                                                                                content: '1'
+                                                                                                mined: false
+                                                                                                revealed: true
+                                                                                                flagged: false
+                                                                                                neighbors:
+                                                                                                - *52
+                                                                                                - *55
+                                                                                                - *53
+                                                                                                - *60
+                                                                                                - &71 !ruby/object:Tile
+                                                                                                  position:
+                                                                                                  - 12
+                                                                                                  - 11
+                                                                                                  content: _
+                                                                                                  mined: false
+                                                                                                  revealed: true
+                                                                                                  flagged: false
+                                                                                                  neighbors:
+                                                                                                  - *55
+                                                                                                  - *53
+                                                                                                  - *62
+                                                                                                  - *63
+                                                                                                  - &67 !ruby/object:Tile
+                                                                                                    position:
+                                                                                                    - 12
+                                                                                                    - 12
+                                                                                                    content: '1'
+                                                                                                    mined: false
+                                                                                                    revealed: true
+                                                                                                    flagged: false
+                                                                                                    neighbors:
+                                                                                                    - *53
+                                                                                                    - *62
+                                                                                                    - &65 !ruby/object:Tile
+                                                                                                      position:
+                                                                                                      - 11
+                                                                                                      - 13
+                                                                                                      content: " "
+                                                                                                      mined: true
+                                                                                                      revealed: false
+                                                                                                      flagged: false
+                                                                                                      neighbors:
+                                                                                                      - *49
+                                                                                                      - *50
+                                                                                                      - *64
+                                                                                                      - *62
+                                                                                                      - &66 !ruby/object:Tile
+                                                                                                        position:
+                                                                                                        - 11
+                                                                                                        - 14
+                                                                                                        content: " "
+                                                                                                        mined: false
+                                                                                                        revealed: false
+                                                                                                        flagged: false
+                                                                                                        neighbors:
+                                                                                                        - *50
+                                                                                                        - *64
+                                                                                                        - &101 !ruby/object:Tile
+                                                                                                          position:
+                                                                                                          - 10
+                                                                                                          - 15
+                                                                                                          content: " "
+                                                                                                          mined: false
+                                                                                                          revealed: false
+                                                                                                          flagged: false
+                                                                                                        - *65
+                                                                                                        - &68 !ruby/object:Tile
+                                                                                                          position:
+                                                                                                          - 11
+                                                                                                          - 15
+                                                                                                          content: " "
+                                                                                                          mined: false
+                                                                                                          revealed: false
+                                                                                                          flagged: false
+                                                                                                        - &69 !ruby/object:Tile
+                                                                                                          position:
+                                                                                                          - 12
+                                                                                                          - 13
+                                                                                                          content: '2'
+                                                                                                          mined: false
+                                                                                                          revealed: true
+                                                                                                          flagged: false
+                                                                                                          neighbors:
+                                                                                                          - *62
+                                                                                                          - *65
+                                                                                                          - *66
+                                                                                                          - *67
+                                                                                                          - &70 !ruby/object:Tile
+                                                                                                            position:
+                                                                                                            - 12
+                                                                                                            - 14
+                                                                                                            content: " "
+                                                                                                            mined: false
+                                                                                                            revealed: false
+                                                                                                            flagged: false
+                                                                                                            neighbors:
+                                                                                                            - *65
+                                                                                                            - *66
+                                                                                                            - *68
+                                                                                                            - *69
+                                                                                                            - &81 !ruby/object:Tile
+                                                                                                              position:
+                                                                                                              - 12
+                                                                                                              - 15
+                                                                                                              content: " "
+                                                                                                              mined: false
+                                                                                                              revealed: false
+                                                                                                              flagged: false
+                                                                                                            - &79 !ruby/object:Tile
+                                                                                                              position:
+                                                                                                              - 13
+                                                                                                              - 13
+                                                                                                              content: '1'
+                                                                                                              mined: false
+                                                                                                              revealed: true
+                                                                                                              flagged: false
+                                                                                                              neighbors:
+                                                                                                              - *67
+                                                                                                              - *69
+                                                                                                              - *70
+                                                                                                              - &77 !ruby/object:Tile
+                                                                                                                position:
+                                                                                                                - 13
+                                                                                                                - 12
+                                                                                                                content: _
+                                                                                                                mined: false
+                                                                                                                revealed: true
+                                                                                                                flagged: false
+                                                                                                                neighbors:
+                                                                                                                - *71
+                                                                                                                - *67
+                                                                                                                - *69
+                                                                                                                - &73 !ruby/object:Tile
+                                                                                                                  position:
+                                                                                                                  - 13
+                                                                                                                  - 11
+                                                                                                                  content: _
+                                                                                                                  mined: false
+                                                                                                                  revealed: true
+                                                                                                                  flagged: false
+                                                                                                                  neighbors:
+                                                                                                                  - *63
+                                                                                                                  - *71
+                                                                                                                  - *67
+                                                                                                                  - &75 !ruby/object:Tile
+                                                                                                                    position:
+                                                                                                                    - 13
+                                                                                                                    - 10
+                                                                                                                    content: '1'
+                                                                                                                    mined: false
+                                                                                                                    revealed: true
+                                                                                                                    flagged: false
+                                                                                                                    neighbors:
+                                                                                                                    - *60
+                                                                                                                    - *63
+                                                                                                                    - *71
+                                                                                                                    - *72
+                                                                                                                    - *73
+                                                                                                                    - &76 !ruby/object:Tile
+                                                                                                                      position:
+                                                                                                                      - 14
+                                                                                                                      - 9
+                                                                                                                      content: " "
+                                                                                                                      mined: false
+                                                                                                                      revealed: false
+                                                                                                                      flagged: false
+                                                                                                                      neighbors:
+                                                                                                                      - *74
+                                                                                                                      - *72
+                                                                                                                      - *75
+                                                                                                                      - &88 !ruby/object:Tile
+                                                                                                                        position:
+                                                                                                                        - 14
+                                                                                                                        - 8
+                                                                                                                        content: " "
+                                                                                                                        mined: false
+                                                                                                                        revealed: false
+                                                                                                                        flagged: false
+                                                                                                                      - &78 !ruby/object:Tile
+                                                                                                                        position:
+                                                                                                                        - 14
+                                                                                                                        - 10
+                                                                                                                        content: '1'
+                                                                                                                        mined: false
+                                                                                                                        revealed: true
+                                                                                                                        flagged: false
+                                                                                                                        neighbors:
+                                                                                                                        - *72
+                                                                                                                        - *75
+                                                                                                                        - *73
+                                                                                                                        - *76
+                                                                                                                        - &80 !ruby/object:Tile
+                                                                                                                          position:
+                                                                                                                          - 14
+                                                                                                                          - 11
+                                                                                                                          content: '1'
+                                                                                                                          mined: false
+                                                                                                                          revealed: true
+                                                                                                                          flagged: false
+                                                                                                                          neighbors:
+                                                                                                                          - *75
+                                                                                                                          - *73
+                                                                                                                          - *77
+                                                                                                                          - *78
+                                                                                                                          - &87 !ruby/object:Tile
+                                                                                                                            position:
+                                                                                                                            - 14
+                                                                                                                            - 12
+                                                                                                                            content: '1'
+                                                                                                                            mined: false
+                                                                                                                            revealed: true
+                                                                                                                            flagged: false
+                                                                                                                            neighbors:
+                                                                                                                            - *73
+                                                                                                                            - *77
+                                                                                                                            - *79
+                                                                                                                            - *80
+                                                                                                                            - &82 !ruby/object:Tile
+                                                                                                                              position:
+                                                                                                                              - 14
+                                                                                                                              - 13
+                                                                                                                              content: '3'
+                                                                                                                              mined: false
+                                                                                                                              revealed: true
+                                                                                                                              flagged: false
+                                                                                                                              neighbors:
+                                                                                                                              - *77
+                                                                                                                              - *79
+                                                                                                                              - &83 !ruby/object:Tile
+                                                                                                                                position:
+                                                                                                                                - 13
+                                                                                                                                - 14
+                                                                                                                                content: " "
+                                                                                                                                mined: true
+                                                                                                                                revealed: false
+                                                                                                                                flagged: false
+                                                                                                                                neighbors:
+                                                                                                                                - *69
+                                                                                                                                - *70
+                                                                                                                                - *81
+                                                                                                                                - *79
+                                                                                                                                - &84 !ruby/object:Tile
+                                                                                                                                  position:
+                                                                                                                                  - 13
+                                                                                                                                  - 15
+                                                                                                                                  content: " "
+                                                                                                                                  mined: true
+                                                                                                                                  revealed: false
+                                                                                                                                  flagged: false
+                                                                                                                                - *82
+                                                                                                                                - &85 !ruby/object:Tile
+                                                                                                                                  position:
+                                                                                                                                  - 14
+                                                                                                                                  - 14
+                                                                                                                                  content: " "
+                                                                                                                                  mined: false
+                                                                                                                                  revealed: false
+                                                                                                                                  flagged: false
+                                                                                                                                  neighbors:
+                                                                                                                                  - *79
+                                                                                                                                  - *83
+                                                                                                                                  - *84
+                                                                                                                                  - *82
+                                                                                                                                  - &86 !ruby/object:Tile
+                                                                                                                                    position:
+                                                                                                                                    - 14
+                                                                                                                                    - 15
+                                                                                                                                    content: " "
+                                                                                                                                    mined: false
+                                                                                                                                    revealed: false
+                                                                                                                                    flagged: false
+                                                                                                                                    neighbors:
+                                                                                                                                    - *83
+                                                                                                                                    - *84
+                                                                                                                                    - *85
+                                                                                                                                    - &93 !ruby/object:Tile
+                                                                                                                                      position:
+                                                                                                                                      - 15
+                                                                                                                                      - 14
+                                                                                                                                      content: " "
+                                                                                                                                      mined: true
+                                                                                                                                      revealed: false
+                                                                                                                                      flagged: false
+                                                                                                                                      neighbors:
+                                                                                                                                      - *82
+                                                                                                                                      - *85
+                                                                                                                                      - *86
+                                                                                                                                      - &92 !ruby/object:Tile
+                                                                                                                                        position:
+                                                                                                                                        - 15
+                                                                                                                                        - 13
+                                                                                                                                        content: " "
+                                                                                                                                        mined: false
+                                                                                                                                        revealed: false
+                                                                                                                                        flagged: false
+                                                                                                                                        neighbors:
+                                                                                                                                        - *87
+                                                                                                                                        - *82
+                                                                                                                                        - *85
+                                                                                                                                        - &91 !ruby/object:Tile
+                                                                                                                                          position:
+                                                                                                                                          - 15
+                                                                                                                                          - 12
+                                                                                                                                          content: " "
+                                                                                                                                          mined: true
+                                                                                                                                          revealed: false
+                                                                                                                                          flagged: false
+                                                                                                                                          neighbors:
+                                                                                                                                          - *80
+                                                                                                                                          - *87
+                                                                                                                                          - *82
+                                                                                                                                          - &90 !ruby/object:Tile
+                                                                                                                                            position:
+                                                                                                                                            - 15
+                                                                                                                                            - 11
+                                                                                                                                            content: " "
+                                                                                                                                            mined: false
+                                                                                                                                            revealed: false
+                                                                                                                                            flagged: false
+                                                                                                                                            neighbors:
+                                                                                                                                            - *78
+                                                                                                                                            - *80
+                                                                                                                                            - *87
+                                                                                                                                            - &89 !ruby/object:Tile
+                                                                                                                                              position:
+                                                                                                                                              - 15
+                                                                                                                                              - 10
+                                                                                                                                              content: " "
+                                                                                                                                              mined: false
+                                                                                                                                              revealed: false
+                                                                                                                                              flagged: false
+                                                                                                                                              neighbors:
+                                                                                                                                              - *76
+                                                                                                                                              - *78
+                                                                                                                                              - *80
+                                                                                                                                              - &95 !ruby/object:Tile
+                                                                                                                                                position:
+                                                                                                                                                - 15
+                                                                                                                                                - 9
+                                                                                                                                                content: " "
+                                                                                                                                                mined: false
+                                                                                                                                                revealed: false
+                                                                                                                                                flagged: false
+                                                                                                                                                neighbors:
+                                                                                                                                                - *88
+                                                                                                                                                - *76
+                                                                                                                                                - *78
+                                                                                                                                                - &96 !ruby/object:Tile
+                                                                                                                                                  position:
+                                                                                                                                                  - 15
+                                                                                                                                                  - 8
+                                                                                                                                                  content: " "
+                                                                                                                                                  mined: false
+                                                                                                                                                  revealed: false
+                                                                                                                                                  flagged: false
+                                                                                                                                                - *89
+                                                                                                                                              - *90
+                                                                                                                                            - *91
+                                                                                                                                          - *92
+                                                                                                                                        - *93
+                                                                                                                                      - &94 !ruby/object:Tile
+                                                                                                                                        position:
+                                                                                                                                        - 15
+                                                                                                                                        - 15
+                                                                                                                                        content: '1'
+                                                                                                                                        mined: false
+                                                                                                                                        revealed: true
+                                                                                                                                        flagged: false
+                                                                                                                                        neighbors:
+                                                                                                                                        - *85
+                                                                                                                                        - *86
+                                                                                                                                        - *93
+                                                                                                                                        neighbor_bombs: 1
+                                                                                                                                    - *94
+                                                                                                                                  - *92
+                                                                                                                                  - *93
+                                                                                                                                  - *94
+                                                                                                                                - *86
+                                                                                                                              - *87
+                                                                                                                              - *85
+                                                                                                                              - *91
+                                                                                                                              - *92
+                                                                                                                              - *93
+                                                                                                                              neighbor_bombs: 3
+                                                                                                                            - *90
+                                                                                                                            - *91
+                                                                                                                            - *92
+                                                                                                                            neighbor_bombs: 1
+                                                                                                                          - *89
+                                                                                                                          - *90
+                                                                                                                          - *91
+                                                                                                                          neighbor_bombs: 1
+                                                                                                                        - *95
+                                                                                                                        - *89
+                                                                                                                        - *90
+                                                                                                                        neighbor_bombs: 1
+                                                                                                                      - *96
+                                                                                                                      - *95
+                                                                                                                      - *89
+                                                                                                                    - *78
+                                                                                                                    - *80
+                                                                                                                    neighbor_bombs: 1
+                                                                                                                  - *77
+                                                                                                                  - *78
+                                                                                                                  - *80
+                                                                                                                  - *87
+                                                                                                                  neighbor_bombs: 0
+                                                                                                                - *79
+                                                                                                                - *80
+                                                                                                                - *87
+                                                                                                                - *82
+                                                                                                                neighbor_bombs: 0
+                                                                                                              - *83
+                                                                                                              - *87
+                                                                                                              - *82
+                                                                                                              - *85
+                                                                                                              neighbor_bombs: 1
+                                                                                                            - *83
+                                                                                                            - *84
+                                                                                                          - *77
+                                                                                                          - *79
+                                                                                                          - *83
+                                                                                                          neighbor_bombs: 2
+                                                                                                        - *70
+                                                                                                        - *81
+                                                                                                      - *67
+                                                                                                      - *69
+                                                                                                      - *70
+                                                                                                    - *71
+                                                                                                    - *69
+                                                                                                    - *73
+                                                                                                    - *77
+                                                                                                    - *79
+                                                                                                    neighbor_bombs: 1
+                                                                                                  - *75
+                                                                                                  - *73
+                                                                                                  - *77
+                                                                                                  neighbor_bombs: 0
+                                                                                                - *72
+                                                                                                - *75
+                                                                                                - *73
+                                                                                                neighbor_bombs: 1
+                                                                                              - *74
+                                                                                              - *75
+                                                                                              - *88
+                                                                                              - *76
+                                                                                              - *78
+                                                                                            - &97 !ruby/object:Tile
+                                                                                              position:
+                                                                                              - 14
+                                                                                              - 7
+                                                                                              content: " "
+                                                                                              mined: false
+                                                                                              revealed: false
+                                                                                              flagged: false
+                                                                                            - *88
+                                                                                            - *76
+                                                                                          - &103 !ruby/object:Tile
+                                                                                            position:
+                                                                                            - 14
+                                                                                            - 6
+                                                                                            content: " "
+                                                                                            mined: false
+                                                                                            revealed: false
+                                                                                            flagged: false
+                                                                                          - *97
+                                                                                          - *88
+                                                                                        - *74
+                                                                                      - *60
+                                                                                      - *61
+                                                                                      - *74
+                                                                                      - *72
+                                                                                      neighbor_bombs: 3
+                                                                                    - *63
+                                                                                    - *74
+                                                                                    - *72
+                                                                                    - *75
+                                                                                    neighbor_bombs: 2
+                                                                                  - *63
+                                                                                  - *71
+                                                                                  neighbor_bombs: 0
+                                                                                - *62
+                                                                                - *63
+                                                                                - *71
+                                                                                - *67
+                                                                                neighbor_bombs: 1
+                                                                              - *65
+                                                                              - *71
+                                                                              - *67
+                                                                              - *69
+                                                                              neighbor_bombs: 2
+                                                                            - *65
+                                                                            - *66
+                                                                          - *53
+                                                                          - *62
+                                                                          - *65
+                                                                        - *50
+                                                                      - *51
+                                                                      - *49
+                                                                      - *55
+                                                                      - *53
+                                                                      - *62
+                                                                      neighbor_bombs: 1
+                                                                    - *52
+                                                                    - *55
+                                                                    - *53
+                                                                    neighbor_bombs: 0
+                                                                  - *54
+                                                                  - *55
+                                                                  - *56
+                                                                  - *60
+                                                                  - *63
+                                                                  neighbor_bombs: 0
+                                                                - *58
+                                                                - *56
+                                                                - *60
+                                                                neighbor_bombs: 1
+                                                              - *57
+                                                              - *58
+                                                              - *56
+                                                            - &98 !ruby/object:Tile
+                                                              position:
+                                                              - 12
+                                                              - 5
+                                                              content: " "
+                                                              mined: false
+                                                              revealed: false
+                                                              flagged: false
+                                                            - *57
+                                                            - *58
+                                                          - &102 !ruby/object:Tile
+                                                            position:
+                                                            - 12
+                                                            - 4
+                                                            content: " "
+                                                            mined: false
+                                                            revealed: false
+                                                            flagged: false
+                                                          - *98
+                                                          - *57
+                                                        - *42
+                                                      - *39
+                                                      - *40
+                                                      - *42
+                                                      - *44
+                                                      neighbor_bombs: 2
+                                                    - *41
+                                                    - *42
+                                                    - *44
+                                                    - *54
+                                                    neighbor_bombs: 1
+                                                  - *43
+                                                  - *44
+                                                  - *54
+                                                  - *52
+                                                  neighbor_bombs: 1
+                                                - *51
+                                                - *54
+                                                - *52
+                                                - *55
+                                                neighbor_bombs: 0
+                                              - *51
+                                              - *46
+                                              neighbor_bombs: 1
+                                            - *47
+                                            - *51
+                                            - *46
+                                            - *49
+                                            neighbor_bombs: 2
+                                          - *47
+                                          - *48
+                                        - *34
+                                        - *32
+                                        - *47
+                                      - *31
+                                      - *34
+                                      - *32
+                                    - *33
+                                    - *34
+                                    - *41
+                                    - *43
+                                    - *51
+                                    neighbor_bombs: 1
+                                  - *39
+                                  - *41
+                                  - *43
+                                  neighbor_bombs: 0
+                                - *35
+                                - *39
+                                - *41
+                                neighbor_bombs: 0
+                              - *37
+                              - *35
+                              - *39
+                              neighbor_bombs: 1
+                            - *36
+                            - *37
+                            - *35
+                          - *23
+                        - *20
+                        - *21
+                        - *23
+                        - *25
+                        neighbor_bombs: 2
+                      - *22
+                      - *23
+                      - *25
+                      - *33
+                      neighbor_bombs: 1
+                    - *24
+                    - *25
+                    - *33
+                    - *31
+                    neighbor_bombs: 1
+                  - *27
+                  - *33
+                  - *31
+                  - *34
+                  neighbor_bombs: 1
+                - *27
+                - *29
+              - *22
+              - *24
+              - *27
+            - *20
+            - *22
+            - *24
+          - *16
+          - *20
+          - *22
+        - *18
+        - *16
+        - *20
+      - *17
+      - *18
+      - *16
+    - *8
+    - *10
+    - *12
+    - *14
+    - *15
+    - *26
+    - *28
+    - *99
     - !ruby/object:Tile
       position:
-      - 9
-      - 11
+      - 7
+      - 14
       content: " "
       mined: false
       revealed: false
       flagged: false
     - !ruby/object:Tile
       position:
-      - 9
-      - 12
+      - 7
+      - 15
       content: " "
       mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
+  - - !ruby/object:Tile
       position:
-      - 9
-      - 13
+      - 8
+      - 0
       content: " "
       mined: true
       revealed: false
       flagged: false
     - !ruby/object:Tile
       position:
-      - 9
+      - 8
+      - 1
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - !ruby/object:Tile
+      position:
+      - 8
+      - 2
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - !ruby/object:Tile
+      position:
+      - 8
+      - 3
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - *17
+    - *18
+    - *16
+    - *20
+    - *22
+    - *24
+    - *27
+    - *29
+    - *30
+    - *45
+    - !ruby/object:Tile
+      position:
+      - 8
       - 14
       content: " "
       mined: false
       revealed: false
       flagged: false
+    - !ruby/object:Tile
+      position:
+      - 8
+      - 15
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+  - - !ruby/object:Tile
+      position:
+      - 9
+      - 0
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - !ruby/object:Tile
+      position:
+      - 9
+      - 1
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - !ruby/object:Tile
+      position:
+      - 9
+      - 2
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - !ruby/object:Tile
+      position:
+      - 9
+      - 3
+      content: " "
+      mined: false
+      revealed: false
+      flagged: false
+    - *19
+    - *21
+    - *23
+    - *25
+    - *33
+    - *31
+    - *34
+    - *32
+    - *47
+    - *48
+    - *100
     - !ruby/object:Tile
       position:
       - 9
@@ -1324,111 +2413,18 @@ board: !ruby/object:Board
       mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 4
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 5
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 6
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 7
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - &6 !ruby/object:Tile
-      position:
-      - 10
-      - 8
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - &8 !ruby/object:Tile
-      position:
-      - 10
-      - 9
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-      neighbors:
-      - *3
-      - *5
-      - *6
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 10
-      content: _
-      mined: false
-      revealed: true
-      flagged: false
-      neighbors:
-      - *5
-      - *7
-      - *8
-      neighbor_bombs: 0
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 11
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 12
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 13
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 14
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 10
-      - 15
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
+    - *36
+    - *37
+    - *35
+    - *39
+    - *41
+    - *43
+    - *51
+    - *46
+    - *49
+    - *50
+    - *64
+    - *101
   - - !ruby/object:Tile
       position:
       - 11
@@ -1461,102 +2457,18 @@ board: !ruby/object:Board
       mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 4
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 5
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 6
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 7
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 8
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 9
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 10
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 11
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 12
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 13
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 14
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 11
-      - 15
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
+    - *38
+    - *40
+    - *42
+    - *44
+    - *54
+    - *52
+    - *55
+    - *53
+    - *62
+    - *65
+    - *66
+    - *68
   - - !ruby/object:Tile
       position:
       - 12
@@ -1589,102 +2501,18 @@ board: !ruby/object:Board
       mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 4
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 5
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 6
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 7
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 8
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 9
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 10
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 11
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 12
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 13
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 14
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 12
-      - 15
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
+    - *102
+    - *98
+    - *57
+    - *58
+    - *56
+    - *60
+    - *63
+    - *71
+    - *67
+    - *69
+    - *70
+    - *81
   - - !ruby/object:Tile
       position:
       - 13
@@ -1733,86 +2561,16 @@ board: !ruby/object:Board
       mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 6
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 7
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 8
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 9
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 10
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 11
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 12
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 13
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 14
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 13
-      - 15
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
+    - *59
+    - *61
+    - *74
+    - *72
+    - *75
+    - *73
+    - *77
+    - *79
+    - *83
+    - *84
   - - !ruby/object:Tile
       position:
       - 14
@@ -1861,86 +2619,16 @@ board: !ruby/object:Board
       mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 6
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 7
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 8
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 9
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 10
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 11
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 12
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 13
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 14
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 14
-      - 15
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
+    - *103
+    - *97
+    - *88
+    - *76
+    - *78
+    - *80
+    - *87
+    - *82
+    - *85
+    - *86
   - - !ruby/object:Tile
       position:
       - 15
@@ -2005,67 +2693,11 @@ board: !ruby/object:Board
       mined: false
       revealed: false
       flagged: false
-    - !ruby/object:Tile
-      position:
-      - 15
-      - 8
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 15
-      - 9
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 15
-      - 10
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 15
-      - 11
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 15
-      - 12
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 15
-      - 13
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 15
-      - 14
-      content: " "
-      mined: true
-      revealed: false
-      flagged: false
-    - !ruby/object:Tile
-      position:
-      - 15
-      - 15
-      content: " "
-      mined: false
-      revealed: false
-      flagged: false
+    - *96
+    - *95
+    - *89
+    - *90
+    - *91
+    - *92
+    - *93
+    - *94

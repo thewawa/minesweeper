@@ -5,8 +5,14 @@ require 'yaml'
 class Game
     attr_accessor :board
 
-    def initialize
-        @board = Board.new(16,16,40)
+    def initialize(level)
+        if level == "Easy"
+            @board = Board.new(9,9,10)
+        elsif level == "Medium"
+            @board = Board.new(16,16,40)
+        elsif level == "Hard"
+            @board = Board.new(30,16,99)
+        end
     end
 
     def setup   
@@ -155,6 +161,20 @@ class Game
     end
 end
 
-new_game = Game.new
+def ask_for_level
+    puts "Choose level. Type 1 for Easy, 2 for Medium, 3 for Hard:"
+
+    level = gets.chomp
+
+    if level == "1"
+        return Game.new("Easy")
+    elsif level == "2"
+        return Game.new("Medium")
+    elsif level == "3"
+        return Game.new("Hard")
+    end
+end
+
+new_game = ask_for_level
 new_game.setup
 new_game.play
