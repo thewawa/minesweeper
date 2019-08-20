@@ -18,7 +18,7 @@ class Tile
         'content' => @content }.inspect
     end
 
-    def list_neighbors(board_tiles)
+    def list_neighbors(board)
         @neighbors = []
         row = @position[0]
         column = @position[1]
@@ -26,35 +26,35 @@ class Tile
         #row above
         if row > 0
             if column > 0
-                @neighbors << board_tiles[row-1][column-1]
+                @neighbors << board.tiles[row-1][column-1]
             end
 
-            @neighbors << board_tiles[row-1][column]
+            @neighbors << board.tiles[row-1][column]
 
-            if column < 8
-                @neighbors << board_tiles[row-1][column+1]
+            if column < board.width - 1
+                @neighbors << board.tiles[row-1][column+1]
             end
         end
 
         #same row
         if column > 0
-            @neighbors << board_tiles[row][column-1]
+            @neighbors << board.tiles[row][column-1]
         end
 
-        if column < 8
-            @neighbors << board_tiles[row][column+1]
+        if column < board.width - 1
+            @neighbors << board.tiles[row][column+1]
         end
 
         #row below
-        if row < 8
+        if row < board.width - 1
             if column > 0
-                @neighbors << board_tiles[row+1][column-1]
+                @neighbors << board.tiles[row+1][column-1]
             end
 
-            @neighbors << board_tiles[row+1][column]
+            @neighbors << board.tiles[row+1][column]
 
-            if column < 8
-                @neighbors << board_tiles[row+1][column+1]
+            if column < board.width - 1
+                @neighbors << board.tiles[row+1][column+1]
             end
         end
 
@@ -68,9 +68,9 @@ class Tile
         @neighbor_bombs
     end
 
-    def reveal(board_tiles)
-        self.list_neighbors(board_tiles)
-        self.neighbor_bomb_count(@neighbors)
+    def reveal(board)
+        list_neighbors(board)
+        neighbor_bomb_count(@neighbors)
 
         return if @mined == true
         return if @revealed == true

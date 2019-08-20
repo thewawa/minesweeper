@@ -6,7 +6,7 @@ class Game
     attr_accessor :board
 
     def initialize
-        @board = Board.new(9,9,10)
+        @board = Board.new(16,16,40)
     end
 
     def setup   
@@ -28,7 +28,12 @@ class Game
     end
 
     def which_tile?(input)
-        if input.length != 4
+        max_height = @board.height - 1
+        max_width = @board.width - 1
+        max_input_length = 2 + max_height.to_s.length + max_width.to_s.length
+
+        #filter out inputs that are typos (e.g. 'r,0') or unreal (e.g. 'f999,999')
+        if input.length < 4 || input.length > max_input_length
             return
         end
         
@@ -42,7 +47,6 @@ class Game
     end
 
     def process_command(input)
-
         if input[0] == "r"
             process_reveal(input)
         elsif input[0] == "f"
@@ -56,7 +60,9 @@ class Game
 
     def process_reveal(input)
         tile = which_tile?(input)
+
         return if tile.content == "F"
+
         apply_reveal(tile)
     end
 

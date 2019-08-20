@@ -27,7 +27,9 @@ class Board
 
     def plant_mines
         while @tiles.flatten.count { |tile| tile.mined == true } < @mines
-            coordinate = rand(0...81)
+            num_of_tiles = @height * @width
+
+            coordinate = rand(0...num_of_tiles)
             random_tile = @tiles.flatten[coordinate]
 
             random_tile.mined = true
@@ -39,10 +41,10 @@ class Board
     end
 
     def reveal(tile)
-        tile.reveal(@tiles)
+        tile.reveal(self)
 
         tile.neighbors.each do |neighbor|
-            neighbor.list_neighbors(@tiles)
+            neighbor.list_neighbors(self)
 
             if neighbor.mined == false && neighbor.revealed == false && neighbor.neighbors.any? { |ele| ele.content == "_" }
                 reveal(neighbor)
@@ -81,15 +83,38 @@ class Board
     def render
         system("cls")
         
-        print " "
+        digits = @width.to_s.length
+        
+        #prints top row
+        print " " * digits
         (0...@width).each {|column| print " #{column}"}
         puts
 
-        @tiles.each.with_index do |row, idx1|
-            print "#{idx1}"
-            row.each.with_index do |tile, idx2|
-                symbol = tile.content
-                print " #{apply_color(symbol)}"
+        #prints the first column of each row
+        @tiles.each.with_index do |row, row_idx|
+            if digits == 1
+                print "#{row_idx}"
+            elsif digits == 2
+                if row_idx < 10
+                    print " #{row_idx}" 
+                else
+                    print "#{row_idx}"
+                end
+            end
+
+            #print each tile within a row
+            row.each.with_index do |tile, col_idx|
+                output = " #{apply_color(tile.content)}"
+
+                if digits == 1
+                    print output
+                elsif digits == 2
+                    if col_idx < 10
+                        print output 
+                    else
+                        print " " + output
+                    end
+                end
             end
 
             puts
@@ -97,9 +122,7 @@ class Board
     end
 
     def apply_color(symbol)
-        if symbol == "_"
-            return symbol.colorize(:default)
-        elsif symbol.to_i == 1
+        if symbol.to_i == 1
             return symbol.colorize(:blue)
         elsif symbol.to_i == 2
             return symbol.colorize(:green)
